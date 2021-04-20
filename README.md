@@ -46,7 +46,7 @@ pheatmap
 ## Uses of PhenoExam
 
 
-**PhenoExam** is an R package that performs (1) phenotype enrichment analysis on a gene set, (2) measures statistically significant phenotype similarities between gene sets and (3) detects significant differential phenotypes for them. Phenotypic Similarity between two groups of genes is performed by assessing the statistical significance of the Phenotypic Overlap Ratio (POR) between those (i.e. the number of common relevant phenotypes between the gene sets). PhenoExamWeb uses the HPO, MGD, and CRISPRbrain databases for phenotypes. PhenoExamWeb uses UNIPROT, CTD, ORPHANET, CLINGE, GENOMICS ENGLAND, CGI and PSYGENET to obtain diseases terms through DisGeNET database.   
+**PhenoExam** is an R package that performs (1) phenotype enrichment analysis on a gene set, (2) measures statistically significant phenotype similarities between gene sets and (3) detects significant differential phenotypes for them. Phenotypic Similarity between two groups of genes is performed by assessing the statistical significance of the Phenotypic Overlap Ratio (POR) between those (i.e. the number of common relevant phenotypes between the gene sets). PhenoExam uses the HPO, MGD, and CRISPRbrain databases for phenotypes. PhenoExamWeb uses UNIPROT, CTD, ORPHANET, CLINGE, GENOMICS ENGLAND, CGI and PSYGENET to obtain diseases terms through DisGeNET database.   
 
 
 # Available tutorials
