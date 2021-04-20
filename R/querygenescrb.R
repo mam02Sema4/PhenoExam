@@ -27,7 +27,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "UNIPROT") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/UNIPROTbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -50,7 +50,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "CGI") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/CGIbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -73,7 +73,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "PSYGENET") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/PSYGENETbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -96,7 +96,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "ORPHANET") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/ORPHANETbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -119,7 +119,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "CTD") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/CTD_humanbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -142,7 +142,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "GENOMICS_ENGLAND") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/GENOMICS_ENGLANDbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -165,7 +165,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "CLINGEN") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/clingenbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -188,7 +188,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "DIS") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/disbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -211,7 +211,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "HPO") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/hpobasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -233,7 +233,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
     }
 
     if (database == "CRB") {
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/cbrdatabaseok.csv"), header = T)
 
       # Convert vector to a dataframe
@@ -256,7 +256,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "MGD"  | database == "MOUSEDB") {
       # Read mouse data base
-      musedata <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      musedata <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                "/mgibasefinal.tsv"))
 
       names(musedata) <- c("entrez","symbol", "mouse_symbol", "mgi", "term_id", "term_name", "info", "source"   )
@@ -292,7 +292,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
     genes$mouse_symbol <- as.character(genes$mouse_symbol)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -305,7 +305,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "UNIPROT") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/UNIPROTbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -328,7 +328,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "CGI") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/CGIbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -351,7 +351,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "PSYGENET") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/PSYGENETbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -374,7 +374,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "ORPHANET") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/ORPHANETbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -397,7 +397,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "CTD") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/CTD_humanbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -420,7 +420,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "GENOMICS_ENGLAND") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/GENOMICS_ENGLANDbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -443,7 +443,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "CLINGEN") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/clingenbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -466,7 +466,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "DIS") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/disbasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -489,7 +489,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "HPO") {
       # Read human data base
-      hpox <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      hpox <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/hpobasededatos.csv"))
 
       # Convert vector to a dataframe
@@ -511,7 +511,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
     }
 
     if (database == "CRB") {
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/cbrdatabaseok.csv"), header = T)
 
       # Convert vector to a dataframe
@@ -534,7 +534,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
     if (database == "MGD"  | database == "MOUSEDB") {
       # Read mouse data base
-      musedata <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      musedata <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                "/mgibasefinal.tsv"))
 
       names(musedata) <- c("entrez","symbol", "mouse_symbol", "mgi", "term_id", "term_name", "info", "source"   )
@@ -565,7 +565,7 @@ QueryGenes = function(genes, database = "HPO", organism = "human"){
 
 
 #' @title getdbnames
-#' @description This function show the databases available in PhenoExamWeb package.
+#' @description This function show the databases available in PhenoExam package.
 #' @details This function has developed by Alejandro Cisterna García as part of his PhD mentored by Juan Antonio Botía Blaya
 #' @export
 getdbnames = function(){
@@ -586,7 +586,7 @@ getdbnames = function(){
 findoverlapgenes = function(phenos){
 
   # Un archivo base de datos con todas las DB
-  sdb <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  sdb <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                       "/sdb.csv"), header = T)
 
 
@@ -701,7 +701,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/UNIPROTbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -732,7 +732,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/CGIbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -763,7 +763,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/PSYGENETbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -794,7 +794,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/ORPHANETbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -825,7 +825,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/CTD_humanbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -856,7 +856,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/GENOMICS_ENGLANDbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -887,7 +887,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/clingenbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -918,7 +918,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/disbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -949,7 +949,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/hpobasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -980,7 +980,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/cbrdatabaseok.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1008,7 +1008,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
       genes$entrez <- as.numeric(as.character(genes$entrez))
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/mgibasefinal.tsv"), header = T, sep = "\t")
       names(custom) <- c("entrez","human_symbol", "mouse_symbol", "mgi", "term_id", "term_name", "info" , "source"  )
 
@@ -1030,7 +1030,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
     genes$mouse_symbol <- as.character(genes$mouse_symbol)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -1058,7 +1058,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/UNIPROTbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1089,7 +1089,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/CGIbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1120,7 +1120,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/PSYGENETbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1151,7 +1151,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/ORPHANETbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1182,7 +1182,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/CTD_humanbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1213,7 +1213,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/GENOMICS_ENGLANDbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1244,7 +1244,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/clingenbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1275,7 +1275,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/disbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1306,7 +1306,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/hpobasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1337,7 +1337,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/cbrdatabaseok.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1365,7 +1365,7 @@ PhenoGeneNumber = function(genes, database= "HPO", organism = "human"){
       genes$entrez <- as.numeric(as.character(genes$entrez))
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/mgibasefinal.tsv"), header = T, sep = "\t")
       names(custom) <- c("entrez","human_symbol", "mouse_symbol", "mgi", "term_id", "term_name", "info" , "source"  )
 
@@ -1408,7 +1408,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
       genes$entrez <- as.numeric(as.character(genes$entrez))
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/UNIPROTbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1430,7 +1430,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/CGIbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1451,7 +1451,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
       genes$entrez <- as.numeric(as.character(genes$entrez))
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/PSYGENETbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1473,7 +1473,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/ORPHANETbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1495,7 +1495,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/CTD_humanbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1518,7 +1518,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/GENOMICS_ENGLANDbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1540,7 +1540,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/clingenbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1564,7 +1564,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/disbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1585,7 +1585,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
       genes$entrez <- as.numeric(as.character(genes$entrez))
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/hpobasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1607,7 +1607,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/cbrdatabaseok.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1626,7 +1626,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
       genes$entrez <- as.numeric(as.character(genes$entrez))
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/mgibasefinal.tsv"), header = T, sep = "\t")
       names(custom) <- c("entrez","human_symbol", "mouse_symbol", "mgi", "term_id", "term_name", "info" , "source"  )
 
@@ -1650,7 +1650,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
     genes$mouse_symbol <- as.character(genes$mouse_symbol)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -1679,7 +1679,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/UNIPROTbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1710,7 +1710,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/CGIbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1741,7 +1741,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/PSYGENETbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1772,7 +1772,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/ORPHANETbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1803,7 +1803,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/CTD_humanbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1834,7 +1834,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/GENOMICS_ENGLANDbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1865,7 +1865,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/clingenbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1896,7 +1896,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/disbasededatos.csv"), header = T)
 
       # We will keep only the selected genes
@@ -1927,7 +1927,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/hpobasededatos.csv"), header = T)
       names(custom) <- c("entrez","symbol", "term_id", "term_name")
 
@@ -1957,7 +1957,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/cbrdatabaseok.csv"), header = T)
       names(custom) <- c("entrez","symbol", "term_name", "term_id")
 
@@ -1986,7 +1986,7 @@ PhenoGeneNumberOpt = function(genes, database= "HPO", organism = "human"){
       genes$entrez <- as.numeric(as.character(genes$entrez))
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/mgibasefinal.tsv"), header = T, sep = "\t")
       names(custom) <- c("entrez","human_symbol", "mouse_symbol", "mgi", "term_id", "term_name", "info"  , "source" )
 
@@ -2129,7 +2129,7 @@ RandomComparePheno = function(geneset, genesetcompare,  organism = "human", data
 
     # Preparation for simulation analysis
     # We need all genes
-    genAll <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    genAll <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/geneproteinlist.txt"))
     genAll <- as.data.frame(genAll)
     names(genAll) <- c("symbol","entrez")
@@ -2153,7 +2153,7 @@ RandomComparePheno = function(geneset, genesetcompare,  organism = "human", data
 
     # Parallel simulation analysis
     cl <- makeForkCluster(nworkers)
-    clusterEvalQ(cl, library(PhenoExamWeb))
+    clusterEvalQ(cl, library(PhenoExam))
     enrichrandomlist <- parApply(cl, genesRandom, 2, function(x) PhenoEnrichRandomOpt(x,database,organism))
     enrichrandomlistg2 <- parApply(cl, genesRandomg2, 2, function(x) PhenoEnrichRandomOpt(x,database,organism))
     stopCluster(cl)
@@ -2328,7 +2328,7 @@ RandomComparePheno = function(geneset, genesetcompare,  organism = "human", data
       targetgenesm$mouse_symbol <- as.character(targetgenesm$mouse_symbol)
 
       # Read database
-      homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                 "/homology.csv"), header = T)
 
       # We will keep only the selected genes
@@ -2353,7 +2353,7 @@ RandomComparePheno = function(geneset, genesetcompare,  organism = "human", data
       nonoverlapgenes <- foundgeneoverlap(referencegenesm, targetgenesm)
     }
 
-    genAll <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    genAll <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/geneproteinlist.txt"))
     genAll <- as.data.frame(genAll)
     names(genAll) <- c("symbol","entrez")
@@ -2377,7 +2377,7 @@ RandomComparePheno = function(geneset, genesetcompare,  organism = "human", data
     # ME HE QUEDADO CON PHENOENRICHCOMPARERANDOM
     # Paralelizo la opreación de calcular en enriquecimiento para cada set de genes aleatorios
     cl <- makeForkCluster(nworkers)
-    clusterEvalQ(cl, library(PhenoExamWeb))
+    clusterEvalQ(cl, library(PhenoExam))
     enrichrandomlist <- parApply(cl, genesRandom, 2, function(x) PhenoEnrichCompareRandom(nonoverlapgenes, geneset, x, database,organism))
     enrichrandomlistg2 <- parApply(cl, genesRandomg2, 2, function(x) PhenoEnrichCompareRandom(nonoverlapgenes, geneset, x,database,organism))
     stopCluster(cl)
@@ -2574,7 +2574,7 @@ PhenoEnrichGenes = function(genes, database = "HPO", organism = "human", plotn=3
     genes$mouse_symbol <- as.character(genes$mouse_symbol)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -2708,7 +2708,7 @@ PhenoEnrichRandomOpt = function(genes,  database = "HPO", organism = "human"){
     genes$mouse_symbol <- as.character(genes$mouse_symbol)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -2774,7 +2774,7 @@ convertgenesymbolmessage = function(genes, organism = "human"){
     ngeneshomo <- nrow(geneshomo)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -2791,7 +2791,7 @@ convertgenesymbolmessage = function(genes, organism = "human"){
       mensaje <-  paste0("All genes from the input have mice homologues genes")
     }
     if (porcenta != 0) {
-      mensaje <-  paste0("PhenoExamWeb could not find homologues of the human genes: ", onlygeneshomo," (",nonly,"/",ngeneshomo," genes) ",porcenta,"% of the input genes")
+      mensaje <-  paste0("PhenoExam could not find homologues of the human genes: ", onlygeneshomo," (",nonly,"/",ngeneshomo," genes) ",porcenta,"% of the input genes")
 
     }
     return(mensaje)
@@ -2805,7 +2805,7 @@ convertgenesymbolmessage = function(genes, organism = "human"){
     ngenes <- nrow(genes)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -2817,7 +2817,7 @@ convertgenesymbolmessage = function(genes, organism = "human"){
 
     porcenta <- round(((nonly/ngenes)*100), digits = 2)
 
-    mensaje <-  paste0("PhenoExamWeb could not find homologues of the mouse genes: ", onlygenes," (",nonly,"/",ngenes," genes) ",porcenta,"% of the input genes")
+    mensaje <-  paste0("PhenoExam could not find homologues of the mouse genes: ", onlygenes," (",nonly,"/",ngenes," genes) ",porcenta,"% of the input genes")
 
     return(mensaje)
   }
@@ -2850,7 +2850,7 @@ entrezmap = function(genes, human = T){
     genesentrez$entrez <- as.numeric(as.character(genesentrez$entrez))
 
     # Read database
-    custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                            "/geneproteinlist.txt"), header = T)
     names(custom) <- c("symbol","entrez")
 
@@ -2871,7 +2871,7 @@ entrezmap = function(genes, human = T){
       mensaje <-  paste0("All genes from the input will be used")
     }
     if (porcenta != 0) {
-      mensaje <-  paste0("PhenoExamWeb could not use or find these genes: ", genesnoentrez," (",nonly,"/",ngenes," genes) ",porcenta,"% of the input genes")
+      mensaje <-  paste0("PhenoExam could not use or find these genes: ", genesnoentrez," (",nonly,"/",ngenes," genes) ",porcenta,"% of the input genes")
 
     }
 
@@ -2944,7 +2944,7 @@ PhenoEnrichCompare = function(geneset, genesetcompare, database = "HPO", organis
     genes$mouse_symbol <- as.character(genes$mouse_symbol)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -3037,7 +3037,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
 
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -3102,7 +3102,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     # Si solo CRB
     if (database == "CRB") {
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -3171,7 +3171,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     # Si solo MGD
     if (database == "MGD"  | database == "MOUSEDB"){
 
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
 
@@ -3243,7 +3243,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     if (database == "ALL") {
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -3306,7 +3306,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
       # Aqui empieza CRB
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -3368,7 +3368,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
 
       # Aqui empieza MGD
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
       names(numportertotal) <- c("term_id", "term_name", "genes_associated_in_db")
@@ -3446,7 +3446,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
       # Aqui empieza CRB
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -3508,7 +3508,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
 
       # Aqui empieza MGD
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
       names(numportertotal) <- c("term_id", "term_name", "genes_associated_in_db")
@@ -3582,7 +3582,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     if (database == "HPOMGD") {
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -3643,7 +3643,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
 
       # Aqui empieza MGD
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
       names(numportertotal) <- c("term_id", "term_name", "genes_associated_in_db")
@@ -3716,7 +3716,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
 
     if (database == "HPOCRB") {
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -3779,7 +3779,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
       # Aqui empieza CRB
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -3854,7 +3854,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     # Si todas
     if (database == "HUMANDB") {
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -3917,7 +3917,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
       # Aqui empieza CRB
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -4028,7 +4028,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     genes$mouse_symbol <- as.character(genes$mouse_symbol)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -4044,7 +4044,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
 
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -4109,7 +4109,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     # Si solo CRB
     if (database == "CRB") {
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -4178,7 +4178,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     # Si solo MGD
     if (database == "MGD"  | database == "MOUSEDB"){
 
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
 
@@ -4250,7 +4250,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     if (database == "ALL") {
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -4313,7 +4313,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
       # Aqui empieza CRB
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -4375,7 +4375,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
 
       # Aqui empieza MGD
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
       names(numportertotal) <- c("term_id", "term_name", "genes_associated_in_db")
@@ -4453,7 +4453,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
       # Aqui empieza CRB
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -4515,7 +4515,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
 
       # Aqui empieza MGD
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
       names(numportertotal) <- c("term_id", "term_name", "genes_associated_in_db")
@@ -4589,7 +4589,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     if (database == "HPOMGD") {
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -4650,7 +4650,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
 
       # Aqui empieza MGD
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
       names(numportertotal) <- c("term_id", "term_name", "genes_associated_in_db")
@@ -4725,7 +4725,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
     # Si todas
     if (database == "HUMANDB") {
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -4788,7 +4788,7 @@ PhenoEnrichGenespran = function(genes, database = "HPO", organism = "human", plo
       # Aqui empieza CRB
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -4952,7 +4952,7 @@ PhenoEnrichCompareRandom = function(onlygenes, geneset, genesetcompare, database
     genes$mouse_symbol <- as.character(genes$mouse_symbol)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -5243,7 +5243,7 @@ PhenoGeneNumberSimuok = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/hpobasededatos.csv"), header = T)
       names(custom) <- c("entrez","symbol", "term_id", "term_name")
 
@@ -5265,7 +5265,7 @@ PhenoGeneNumberSimuok = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/disbasededatos.csv"), header = T)
       custom <- custom[,c(1,2,5,6)]
       names(custom) <- c("entrez","symbol", "term_id", "term_name")
@@ -5291,7 +5291,7 @@ PhenoGeneNumberSimuok = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/cbrdatabaseok.csv"), header = T)
       names(custom) <- c("entrez","symbol", "term_name", "term_id")
 
@@ -5313,7 +5313,7 @@ PhenoGeneNumberSimuok = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/mgibasefinal.tsv"), header = T, sep = "\t")
       names(custom) <- c("entrez","human_symbol", "mouse_symbol", "mgi", "term_id", "term_name", "info"   )
 
@@ -5337,7 +5337,7 @@ PhenoGeneNumberSimuok = function(genes, database= "HPO", organism = "human"){
     genes$mouse_symbol <- as.character(genes$mouse_symbol)
 
     # Read database
-    homologia <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+    homologia <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                               "/homology.csv"), header = T)
 
     # We will keep only the selected genes
@@ -5366,7 +5366,7 @@ PhenoGeneNumberSimuok = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/hpobasededatos.csv"), header = T)
       names(custom) <- c("entrez","symbol", "term_id", "term_name")
 
@@ -5396,7 +5396,7 @@ PhenoGeneNumberSimuok = function(genes, database= "HPO", organism = "human"){
 
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/cbrdatabaseok.csv"), header = T)
       names(custom) <- c("entrez","symbol", "term_name", "term_id")
 
@@ -5425,7 +5425,7 @@ PhenoGeneNumberSimuok = function(genes, database= "HPO", organism = "human"){
       genes$entrez <- as.numeric(as.character(genes$entrez))
 
       # Read database
-      custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                              "/mgibasefinal.tsv"), header = T, sep = "\t")
       names(custom) <- c("entrez","human_symbol", "mouse_symbol", "mgi", "term_id", "term_name", "info"   )
 
@@ -5463,7 +5463,7 @@ PhenoEnrichGenespransimu = function(genes, database = "HPO", organism = "human")
     # Si solo HPO
     if (database == "HPO") {
 
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -5510,7 +5510,7 @@ PhenoEnrichGenespransimu = function(genes, database = "HPO", organism = "human")
 
     # Si solo CRB
     if (database == "CRB") {
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -5561,7 +5561,7 @@ PhenoEnrichGenespransimu = function(genes, database = "HPO", organism = "human")
     # Si solo MGD
     if (database == "MGD"  | database == "MOUSEDB"){
 
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
       names(numportertotal) <- c("term_id", "term_name", "genes_associated_in_db")
@@ -5609,7 +5609,7 @@ PhenoEnrichGenespransimu = function(genes, database = "HPO", organism = "human")
 
     if (database == "DIS") {
 
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/disdatostotales.csv"), header = T)
 
 
@@ -5657,7 +5657,7 @@ PhenoEnrichGenespransimu = function(genes, database = "HPO", organism = "human")
     if (database == "ALL") {
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -5707,7 +5707,7 @@ PhenoEnrichGenespransimu = function(genes, database = "HPO", organism = "human")
       # Aqui empieza CRB
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
       names(numportertotal) = c("term_id",   "term_name", "genes_associated_in_db")
 
@@ -5757,7 +5757,7 @@ PhenoEnrichGenespransimu = function(genes, database = "HPO", organism = "human")
 
       # Aqui empieza MGD
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
       names(numportertotal) <- c("term_id", "term_name", "genes_associated_in_db")
@@ -5803,7 +5803,7 @@ PhenoEnrichGenespransimu = function(genes, database = "HPO", organism = "human")
 
 
       # Read data base
-      numportertotal <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+      numportertotal <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/disdatostotales.csv"), header = T)
 
 
@@ -5876,7 +5876,7 @@ PhenoEnrichGenespransimu = function(genes, database = "HPO", organism = "human")
 HPOloadder = function(genes, organism = "human", plotnumber = 30, url = F){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
 
@@ -5951,7 +5951,7 @@ HPOloadder = function(genes, organism = "human", plotnumber = 30, url = F){
 
 MGDloadder = function(genes, organism = "human", plotnumber = 30, url = F){
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
   # We will count the number of genes per phenotype
@@ -6017,7 +6017,7 @@ MGDloadder = function(genes, organism = "human", plotnumber = 30, url = F){
 #' @export
 CRBloadder = function(genes, organism = "human", plotnumber = 30, url = F){
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
 
   # We will count the number of genes per phenotype
@@ -6086,7 +6086,7 @@ CRBloadder = function(genes, organism = "human", plotnumber = 30, url = F){
 CLINGENloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/clingendatostotales.csv"), header = T)
 
 
@@ -6156,7 +6156,7 @@ CLINGENloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 GENOMICS_ENGLANDloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/GENOMICS_ENGLANDdatostotales.csv"), header = T)
 
   # We will count the number of genes per phenotype
@@ -6223,7 +6223,7 @@ GENOMICS_ENGLANDloadder = function(genes, organism = "human", plotnumber = 30,  
 CTDloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/CTD_humandatostotales.csv"), header = T)
 
 
@@ -6290,7 +6290,7 @@ CTDloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 ORPHANETloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/ORPHANETdatostotales.csv"), header = T)
 
 
@@ -6357,7 +6357,7 @@ ORPHANETloadder = function(genes, organism = "human", plotnumber = 30,  url = F)
 PSYGENETloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/PSYGENETdatostotales.csv"), header = T)
 
 
@@ -6425,7 +6425,7 @@ PSYGENETloadder = function(genes, organism = "human", plotnumber = 30,  url = F)
 CGIloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/CGIdatostotales.csv"), header = T)
 
 
@@ -6493,7 +6493,7 @@ CGIloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 UNIPROTloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/UNIPROTdatostotales.csv"), header = T)
 
 
@@ -6562,7 +6562,7 @@ UNIPROTloadder = function(genes, organism = "human", plotnumber = 30,  url = F){
 HPOloadderOpt = function(genes, organism = "human", plotnumber = 30){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/hpodatatotales.csv"), header = T)
 
   # We will count the number of genes per phenotype
@@ -6598,7 +6598,7 @@ HPOloadderOpt = function(genes, organism = "human", plotnumber = 30){
 #' @export
 MGDloadderOpt = function(genes, organism = "human", plotnumber = 30){
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/totalmponumber.tsv"), header = T, sep = "\t")
 
 
@@ -6637,7 +6637,7 @@ MGDloadderOpt = function(genes, organism = "human", plotnumber = 30){
 
 CRBloadderOpt = function(genes, organism = "human", plotnumber = 30){
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/cbrtotalnumber.csv"), header = T)
 
 
@@ -6676,7 +6676,7 @@ CRBloadderOpt = function(genes, organism = "human", plotnumber = 30){
 CLINGENloadderOpt = function(genes, organism = "human", plotnumber = 30){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/clingendatostotales.csv"), header = T)
 
 
@@ -6717,7 +6717,7 @@ CLINGENloadderOpt = function(genes, organism = "human", plotnumber = 30){
 GENOMICS_ENGLANDloadderOpt = function(genes, organism = "human", plotnumber = 30){
 
   # Read data base
-  numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+  numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                      "/GENOMICS_ENGLANDdatostotales.csv"), header = T)
 
   # We will count the number of genes per phenotype
@@ -6757,7 +6757,7 @@ GENOMICS_ENGLANDloadderOpt = function(genes, organism = "human", plotnumber = 30
 CTDloadderOpt = function(genes, organism = "human", plotnumber = 30){
 
 # Read data base
-numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                    "/CTD_humandatostotales.csv"), header = T)
 
 # We will count the number of genes per phenotype
@@ -6798,7 +6798,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  ORPHANETloadderOpt = function(genes, organism = "human", plotnumber = 30){
 
 # Read data base
-numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                    "/ORPHANETdatostotales.csv"), header = T)
 
 # We will count the number of genes per phenotype
@@ -6837,7 +6837,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  PSYGENETloadderOpt = function(genes, organism = "human", plotnumber = 30){
 
    # Read data base
-   numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                       "/PSYGENETdatostotales.csv"), header = T)
 
    # We will count the number of genes per phenotype
@@ -6875,7 +6875,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  UNIPROTloadderOpt = function(genes, organism = "human", plotnumber = 30){
 
    # Read data base
-   numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                       "/UNIPROTdatostotales.csv"), header = T)
 
    # We will count the number of genes per phenotype
@@ -6915,7 +6915,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  CGIloadderOpt = function(genes, organism = "human", plotnumber = 30){
 
    # Read data base
-   numportertotalunir <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   numportertotalunir <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                                       "/CGIdatostotales.csv"), header = T)
 
    # We will count the number of genes per phenotype
@@ -6952,7 +6952,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  HPOloaddercompare = function(onlygenes, genesetcompare, organism = "human", plotnumber = 30,  url = F){
 
    # Read data base
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/hpobasededatos.csv"), header = T)
 
 
@@ -7035,7 +7035,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
 
 
  MGDloaddercompare = function(onlygenes,genesetcompare, organism = "human", plotnumber = 30,  url = F){
- custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+ custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                         "/mgibasefinal.tsv"), header = T, sep = "\t")
 
  custom <- dplyr::anti_join(custom, onlygenes, by = "entrez")
@@ -7113,7 +7113,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
 
  CRBloaddercompare = function(onlygenes, genesetcompare, organism = "human", plotnumber = 30,  url = F){
    # Read data base
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/cbrdatabaseok.csv"), header = T)
 
    custom <- dplyr::anti_join(custom, onlygenes, by = "entrez")
@@ -7189,7 +7189,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @export
 
  CLINGENloaddercompare = function(onlygenes,genesetcompare, organism = "human", plotnumber = 30,  url = F){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/clingenbasededatos.csv"), header = T)
 
    custom <- dplyr::anti_join(custom, onlygenes, by = "entrez")
@@ -7266,7 +7266,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  GENOMICS_ENGLANDloaddercompare = function(onlygenes,genesetcompare, organism = "human", plotnumber = 30,  url = F){
 
    # Read data base
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/GENOMICS_ENGLANDbasededatos.csv"), header = T)
 
    custom <- dplyr::anti_join(custom, onlygenes, by = "entrez")
@@ -7341,7 +7341,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @export
 
  CTDloaddercompare = function(onlygenes,genesetcompare, organism = "human", plotnumber = 30,  url = F){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/CTD_humanbasededatos.csv"), header = T)
 
 
@@ -7420,7 +7420,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @export
 
  ORPHANETloaddercompare = function(onlygenes,genesetcompare, organism = "human", plotnumber = 30,  url = F){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/ORPHANETbasededatos.csv"), header = T)
 
 
@@ -7498,7 +7498,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @export
 
  PSYGENETloaddercompare = function(onlygenes,genesetcompare, organism = "human", plotnumber = 30,  url = F){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/PSYGENETbasededatos.csv"), header = T)
 
    custom <- dplyr::anti_join(custom, onlygenes, by = "entrez")
@@ -7576,7 +7576,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
 
 
  UNIPROTloaddercompare = function(onlygenes,genesetcompare, organism = "human", plotnumber = 30,  url = F){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/UNIPROTbasededatos.csv"), header = T)
 
 
@@ -7656,7 +7656,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @export
 
  CGIloaddercompare = function(onlygenes,genesetcompare, organism = "human", plotnumber = 30,  url = F){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/CGIbasededatos.csv"), header = T)
 
 
@@ -7734,7 +7734,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  HPOloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
 
    # Read data base
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/hpobasededatos.csv"), header = T)
 
 
@@ -7781,7 +7781,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @title MGDloaddercompareOpt
  #' @export
  MGDloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/mgibasefinal.tsv"), header = T, sep = "\t")
 
    names(custom) <- c("entrez","human_symbol", "mouse_symbol", "mgi", "term_id", "term_name", "info", "source"   )
@@ -7832,7 +7832,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
 
  CRBloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
    # Read data base
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/cbrdatabaseok.csv"), header = T)
 
 
@@ -7883,7 +7883,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @export
 
  CLINGENloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/clingenbasededatos.csv"), header = T)
 
 
@@ -7935,7 +7935,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  GENOMICS_ENGLANDloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
 
    # Read data base
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/GENOMICS_ENGLANDbasededatos.csv"), header = T)
 
 
@@ -7984,7 +7984,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @export
 
  CTDloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/CTD_humanbasededatos.csv"), header = T)
 
 
@@ -8033,7 +8033,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @export
 
  ORPHANETloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/ORPHANETbasededatos.csv"), header = T)
 
 
@@ -8083,7 +8083,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @export
 
  PSYGENETloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/PSYGENETbasededatos.csv"), header = T)
 
 
@@ -8132,7 +8132,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @title UNIPROTloaddercompareOpt
  #' @export
  UNIPROTloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/UNIPROTbasededatos.csv"), header = T)
 
 
@@ -8182,7 +8182,7 @@ triucusin = triucusin[,c(1:2,4,7,3,5,6,8)]
  #' @title CGIloaddercompareOpt
  #' @export
  CGIloaddercompareOpt = function(onlygenes, geneset, genesetcompare, organism = "human", plotnumber = 30){
-   custom <- fread(paste0(path.package("PhenoExamWeb", quiet = FALSE),
+   custom <- fread(paste0(path.package("PhenoExam", quiet = FALSE),
                           "/CGIbasededatos.csv"), header = T)
 
 

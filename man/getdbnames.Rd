@@ -7,7 +7,7 @@
 getdbnames()
 }
 \description{
-This function show the databases available in PhenoExamWeb package.
+This function show the databases available in PhenoExam package.
 }
 \details{
 This function has developed by Alejandro Cisterna García as part of his PhD mentored by Juan Antonio Botía Blaya
