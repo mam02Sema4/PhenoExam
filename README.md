@@ -51,7 +51,7 @@ pheatmap
 
 # Available tutorials
 
-[Phenotype analysis tutorial](https://rawcdn.githack.com/alexcis95/PhenoExamWebTutorials/d089fa3530033cfc26d69dce055d04bbcfc14087/tutorial.html)
+[Phenotype analysis tutorial](https://rawcdn.githack.com/alexcis95/PhenoExamWebTutorials/b3d40397e0f41af5ff50462350fdc81369479810/tutorial.html)
 
 
 # PhenoExamWeb Shiny app  
