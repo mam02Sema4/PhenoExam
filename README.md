@@ -65,6 +65,4 @@ This work is the result of a pre-doctoral training contract for research staff f
 
 
 Authors:
-Alejandro Cisterna, Aurora González, Daniel Ruiz, Jordi Ortiz, Irene Díez, Paolo Maietta, Sara Álvarez, Mina Ryten, Juan A. Botía  
-
-
+Alejandro Cisterna, Aurora González-Vidal, Daniel Ruiz, Jordi Ortiz, Alicia Gómez-Pascual, Zhongbo Chen, Mike Nalls, Faraz Faghri, John Hardy, Irene Díez, Paolo Maietta, Sara Álvarez, Mina Ryten, Juan A. Botía 
